@@ -69,6 +69,33 @@ export const ChatCommandMetadata: {
         dm_permission: true,
         default_member_permissions: undefined,
     },
+    PING: {
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.ping', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.ping'),
+        description: Lang.getRef('commandDescs.ping', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.ping'),
+        dm_permission: true,
+        default_member_permissions: undefined,
+    },
+    LEADEROBARD: {
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.leaderboard', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.leaderboard'),
+        description: Lang.getRef('commandDescs.leaderboard', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.leaderbaord'),
+        dm_permission: true,
+        default_member_permissions: undefined,
+    },
+    VERIFY: {
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.verify', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.verify'),
+        description: Lang.getRef('commandDescs.verify', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.verify'),
+        dm_permission: true,
+        default_member_permissions: undefined,
+    },
 };
 
 export const MessageCommandMetadata: {
