@@ -60,6 +60,11 @@ async function start(): Promise<void> {
         new HelpCommand(),
         new InfoCommand(),
         new TestCommand(),
+        
+        //Util&Chat
+        new PingCommand(),
+        new VerifyCommand(),
+        new LeaderboardCommand(),
 
         // Message Context Commands
         new ViewDateSent(),
@@ -67,7 +72,7 @@ async function start(): Promise<void> {
         // User Context Commands
         new ViewDateJoined(),
 
-        // TODO: Add new commands here
+        
     ];
 
     // Buttons
