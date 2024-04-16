@@ -60,19 +60,14 @@ export class Args {
     public static readonly PING_OPTION: APIApplicationCommandBasicOption = {
         name: Lang.getRef('arguments.option', Language.Default),
         name_localizations: Lang.getRefLocalizationMap('arguments.option'),
-        description: Lang.getRef('argDescs.pingOption', Language.Default),
-        description_localizations: Lang.getRefLocalizationMap('argDescs.pingOption'),
+        description: Lang.getRef('argDescs.PingOption', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('argDescs.PingOption'),
         type: ApplicationCommandOptionType.String,
         choices: [
             {
-                name: Lang.getRef('infoOptions.about', Language.Default),
-                name_localizations: Lang.getRefLocalizationMap('pingOptions.about'),
+                name: Lang.getRef('PingOptions.about', Language.Default),
+                name_localizations: Lang.getRefLocalizationMap('PingOptions.about'),
                 value: PingOption.ABOUT,
-            },
-            {
-                name: Lang.getRef('infoOptions.translate', Language.Default),
-                name_localizations: Lang.getRefLocalizationMap('pingOptions.translate'),
-                value: PingOption.TRANSLATE,
             },
         ],
     }
