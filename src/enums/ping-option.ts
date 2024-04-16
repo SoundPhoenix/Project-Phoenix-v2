@@ -1,3 +1,3 @@
 export enum PingOption {
-    ABOUT = 'PING SEVRER',
+    PING_SERVER = 'PING_SEVRER',
 }
