@@ -60,13 +60,11 @@ async function start(): Promise<void> {
         new HelpCommand(),
         new InfoCommand(),
         new TestCommand(),
-        
-        //Util&Chat
-        new PingCommand(),
         new VerifyCommand(),
+        new PingCommand(),
         new LeaderboardCommand(),
         new IPCommand(),
-        
+
 
         // Message Context Commands
         new ViewDateSent(),
