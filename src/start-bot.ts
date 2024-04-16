@@ -3,7 +3,7 @@ import { Options, Partials } from 'discord.js';
 import { createRequire } from 'node:module';
 
 import { Button } from './buttons/index.js';
-import { DevCommand, HelpCommand, IPCommand, InfoCommand, TestCommand, VerifyCommand, LeaderboardCommand, PingCommand, ServerCommand, TimeCommand, SetCommand, SetupCommand, } from './commands/chat/index.js';
+import { DevCommand, HelpCommand, InfoCommand, IPCommand, PingCommand, TestCommand, VerifyCommand, } from './commands/chat/index.js';
 import {
     ChatCommandMetadata,
     Command,
@@ -62,12 +62,7 @@ async function start(): Promise<void> {
         new TestCommand(),
         new VerifyCommand(),
         new PingCommand(),
-        new LeaderboardCommand(),
         new IPCommand(),
-        new ServerCommand(),
-        new TimeCommand(),
-        new SetCommand(),
-        new SetupCommand(),
         
 
 
