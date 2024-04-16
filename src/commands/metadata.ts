@@ -77,6 +77,12 @@ export const ChatCommandMetadata: {
         description_localizations: Lang.getRefLocalizationMap('commandDescs.ping'),
         dm_permission: true,
         default_member_permissions: undefined,
+        options: [
+            {
+                ...Args.PING_OPTION,
+                required: true,
+            },
+        ],
     },
     LEADEROBARD: {
         type: ApplicationCommandType.ChatInput,
