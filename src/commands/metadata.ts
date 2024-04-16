@@ -111,6 +111,42 @@ export const ChatCommandMetadata: {
         dm_permission: true,
         default_member_permissions: undefined,
     },
+    SERVER:{
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.server', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.server'),
+        description: Lang.getRef('commandDescs.server', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.server'),
+        dm_permission: true,
+        default_member_permissions: undefined,
+    },
+    TIME:{
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.time', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.time'),
+        description: Lang.getRef('commandDescs.ipinfo', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.time'),
+        dm_permission: true,
+        default_member_permissions: undefined,
+    },
+    SET:{
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.set', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.set'),
+        description: Lang.getRef('commandDescs.set', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.set'),
+        dm_permission: true,
+        default_member_permissions: undefined,
+    },
+    SETUP:{
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.setup', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.setup'),
+        description: Lang.getRef('commandDescs.setup', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.setup'),
+        dm_permission: true,
+        default_member_permissions: undefined,
+    },
 };
 
 export const MessageCommandMetadata: {
