@@ -102,6 +102,15 @@ export const ChatCommandMetadata: {
         dm_permission: true,
         default_member_permissions: undefined,
     },
+    IPINFO: {
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.ipinfo', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.ipinfo'),
+        description: Lang.getRef('commandDescs.ipinfo', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.ipinfo'),
+        dm_permission: true,
+        default_member_permissions: undefined,
+    },
 };
 
 export const MessageCommandMetadata: {

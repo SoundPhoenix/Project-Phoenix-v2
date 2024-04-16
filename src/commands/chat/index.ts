@@ -5,3 +5,4 @@ export { TestCommand } from './test-command.js';
 export { PingCommand } from "./ping-command.js";
 export { VerifyCommand } from "./verify.js";
 export { LeaderboardCommand } from "./leaderboard.js";
+export { IPCommand } from "./ip-command.js";
