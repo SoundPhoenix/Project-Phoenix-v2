@@ -6,3 +6,8 @@ export { PingCommand } from "./ping-command.js";
 export { VerifyCommand } from "./verify.js";
 export { LeaderboardCommand } from "./leaderboard.js";
 export { IPCommand } from "./ip-command.js";
+export { ListCommand } from "./list-command.js";
+export { SetupCommand } from ".Setup-command.js";
+export { TimeCommand } from "./Time-command.js";
+export { SetCommand } from "./Set-command.js";
+export { ServerCommand } from "./Server-command.js";
