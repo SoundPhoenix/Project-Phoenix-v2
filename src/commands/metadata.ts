@@ -69,21 +69,6 @@ export const ChatCommandMetadata: {
         dm_permission: true,
         default_member_permissions: undefined,
     },
-    PING: {
-        type: ApplicationCommandType.ChatInput,
-        name: Lang.getRef('chatCommands.ping', Language.Default),
-        name_localizations: Lang.getRefLocalizationMap('chatCommands.ping'),
-        description: Lang.getRef('commandDescs.ping', Language.Default),
-        description_localizations: Lang.getRefLocalizationMap('commandDescs.ping'),
-        dm_permission: true,
-        default_member_permissions: undefined,
-        options: [
-            {
-                ...Args.PING_OPTION,
-                required: true,
-            },
-        ],
-    },
     LEADEROBARD: {
         type: ApplicationCommandType.ChatInput,
         name: Lang.getRef('chatCommands.leaderboard', Language.Default),
