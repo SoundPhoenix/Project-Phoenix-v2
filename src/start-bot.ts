@@ -60,7 +60,8 @@ async function start(): Promise<void> {
         new HelpCommand(),
         new InfoCommand(),
         new TestCommand(),
-      
+        //new PingCommand(),
+
         
 
 
