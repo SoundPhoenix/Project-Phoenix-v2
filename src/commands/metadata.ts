@@ -72,7 +72,7 @@ export const ChatCommandMetadata: {
     PING: {
         type: ApplicationCommandType.ChatInput,
         name: Lang.getRef('chatCommands.ping', Language.Default),
-        name_localizations: Lang.getRefLocalizationMap('chat/.commands.ping'),
+        name_localizations: Lang.getRefLocalizationMap('chat.commands.ping'),
         description: Lang.getRef('commandDescs.ping', Language.Default),
         description_localizations: Lang.getRefLocalizationMap('commandsDescs.ping'),
         dm_permission: true,
