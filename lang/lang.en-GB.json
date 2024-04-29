@@ -54,6 +54,9 @@
             "test": {
                 "description": "Test command works!"
             },
+            "ping": {
+                "description": "Current ping for {{COM:bot.name}}"
+            },
             "viewDateJoined": {
                 "description": "{{TARGET}} joined on {{DATE}}!"
             },
@@ -192,7 +195,8 @@
             "dev": "dev",
             "help": "help",
             "info": "info",
-            "test": "test"
+            "test": "test",
+            "ping": "ping"
         },
         "userCommands": {
             "viewDateJoined": "View Date Joined"

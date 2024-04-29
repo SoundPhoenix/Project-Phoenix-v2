@@ -192,7 +192,8 @@
             "dev": "dev",
             "help": "help",
             "info": "info",
-            "test": "test"
+            "test": "test",
+            "ping": "ping"
         },
         "userCommands": {
             "viewDateJoined": "View Date Joined"
