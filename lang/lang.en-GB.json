@@ -212,7 +212,9 @@
             "dev": "Developer use only.",
             "help": "Find help or contact support.",
             "info": "View bot info.",
-            "test": "Run the test command."
+            "test": "Run the test command.",
+            "ping": "Checks ping of bot"
+            
         },
         "argDescs": {
             "devCommand": "Command.",
