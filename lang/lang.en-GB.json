@@ -36,7 +36,8 @@
                             "To see the available commands, just type `/` and select the bot from the left side. You can then scroll through all available commands. Some commands may be hidden if you don't have permission to view them.",
                             "",
                             "{{CMD_LINK_TEST}} - {{REF:commandDescs.test}}",
-                            "{{CMD_LINK_INFO}} - {{REF:commandDescs.info}}"
+                            "{{CMD_LINK_INFO}} - {{REF:commandDescs.info}}",
+                            "{{CMD_LINK_HELP}} - {{REF:commandsDescs.help}}"
                         ]
                     },
                     {
@@ -214,7 +215,6 @@
             "info": "View bot info.",
             "test": "Run the test command.",
             "ping": "Checks ping of bot"
-            
         },
         "argDescs": {
             "devCommand": "Command.",
