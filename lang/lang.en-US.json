@@ -56,7 +56,12 @@
                 "description": "Test command works!"
             },
             "ping": {
-                "description": "Current ping for {{COM:bot.name}}"
+                "fields": [
+                    {
+                        "name": "Ping",
+                        "value": ["API: **`{{API_LATENCY}}`**", "", "BOT: **`{{BOT_LATENCY}}`**"]
+                    }
+                ]
             },
             "viewDateJoined": {
                 "description": "{{TARGET}} joined on {{DATE}}!"

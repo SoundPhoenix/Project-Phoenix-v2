@@ -1,6 +1,5 @@
 import { ChatInputCommandInteraction, PermissionsString } from 'discord.js';
 import { RateLimiter } from 'discord.js-rate-limiter';
-import fetch from 'node-fetch'; //Makes the HTTP Request
 
 import { Language } from '../../models/enum-helpers/index.js';
 import { EventData } from '../../models/internal-models.js';
@@ -16,17 +15,23 @@ export class PingCommand implements Command {
 
     public async execute(intr: ChatInputCommandInteraction, data: EventData): Promise<void> {
         try {
-            const start = Date.now();
-            await fetch('https://discord.com/api/v9/gateway'); //Makes A get request to the discord API
-            const end = Date.now();
-            const ping = end - start;
+            const apiLatency = Math.round(intr.client.ws.ping);
+            const botLatency = Date.now() - intr.createdTimestamp;
             await InteractionUtils.send(
                 intr,
-                Lang.getEmbed('displayEmbeds.ping', data.lang, { ping: ping.toString() })
+                Lang.getEmbed('displayEmbeds.ping', data.lang, {
+                    API_LATENCY: `${apiLatency || 'N/A'}ms`,
+                    BOT_LATENCY: `${botLatency || 'N/A'}ms`,
+                })
             );
         } catch (error) {
-            console.error('Error occurred while pinging Discord API:', error);
-            await InteractionUtils.send(intr, 'Error occurred while pinging Discord API.');
+            console.error(error);
+            await InteractionUtils.send(
+                intr,
+                Lang.getEmbed('errorEmbeds.command', data.lang, {
+                    ERROR_CODE: error.code,
+                })
+            );
         }
     }
 }
