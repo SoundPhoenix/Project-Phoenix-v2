@@ -78,6 +78,12 @@ A welcome message is sent to the server and owner when the bot is added.
 
 ![](https://i.imgur.com/QBw8H8v.png)
 
+### Ping Command
+
+A `/ping` command to show the latancy of the discord bot
+
+![](https://i.imgur.com/IlqKvL5.png)
+
 ## Setup
 
 1. Copy example config files.
